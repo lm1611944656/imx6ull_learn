@@ -9,14 +9,14 @@ git init
 git add README.md
 git commit -m "first commit"
 git branch -M master
-git remote add origin git@github.com:lm1611944656/Test.git
+git remote add origin git@github.com:github账号/Test.git
 git push -u origin master
 ```
 
 或者
 
 ```shell
-git remote add origin git@github.com:lm1611944656/Test.git
+git remote add origin git@github.com:github账号/Test.git
 git branch -M master
 git push -u origin master
 ```
