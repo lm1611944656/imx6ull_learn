@@ -130,6 +130,19 @@ export PATH=$PATH:/usr/bin/clear
 ## 3.1 makefile文件格式
 
 ```makefile
+糖醋排骨：糖 醋 排骨
+	制作糖醋排骨
+糖：
+	到商店买糖
+醋：
+	到商店买醋
+排骨：
+	到商店买排骨
+```
+
+- 专业术语
+
+```makefile
 # 定义目标
 目标: 依赖
 	命令集
