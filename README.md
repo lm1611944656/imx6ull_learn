@@ -97,7 +97,13 @@ vim /etc/profile
 export PATH=$PATH:/usr/local/arm/gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabihf/bin
 ```
 
-- 刷新环境变量，查看版本号
+- 刷新环境变量，
+
+```shell 
+source /etc/profile
+```
+
+- 查看版本号
 
 ```shell
 arm-linux-gnueabihf-gcc -v
