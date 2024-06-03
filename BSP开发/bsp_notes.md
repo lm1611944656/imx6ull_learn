@@ -103,7 +103,55 @@ arm-linux-gnueabihf-gcc -v
 
 
 
-第3章 
+# 第3章 Makefile
+
+- 在makefile中引用变量的格式为：
+
+```makefile
+# 定义一个变量
+变量名1 = 值
+
+# 引用变量的格式
+变量名2 = $(变量名)
+```
+
+- 在shell中引用变量的格式
+
+```shell 
+export PATH=$PATH:/usr/bin/clear
+```
+
+>$PATH					取系统中原有的环境变量；
+>
+>:								将环境变量用英文冒号分割开来；
+>
+>/usr/bin/clear		新的环境变量		
+
+## 3.1 makefile文件格式
+
+```makefile
+# 定义目标
+目标: 依赖
+	命令集
+	
+# 定义伪目标
+.PYTHON:clean cleanall run buildsys makesys
+
+makesys:
+	cd $(BUILD_DIR) && make -j4
+
+buildsys:
+	mkdir $(BUILD_DIR) && cd $(BUILD_DIR) && cmake ..
+
+run:
+	cd ${DEST_DIR} && ./$(DEST_EXE_NAME)
+
+clean:
+	rm -rf $(BUILD_DIR)
+
+cleanall:
+	rm  -rf $(BUILD_DIR) $(LIB_DIR) $(DEST_DIR)
+```
 
 
 
