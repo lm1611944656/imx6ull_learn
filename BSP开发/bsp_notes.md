@@ -1,3 +1,23 @@
+# 第0章 芯片介绍
+
+## 0.1 芯片标识
+
+![img](E:\Hardware\Imx6ull\Workspace\imx6ull_learn\imx6ull_learn_notes_img\watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3podWd1YW5saW4xMjE=,size_16,color_FFFFFF,t_70.png)
+
+## 0.2 参数名称
+
+imx6ull是一款由NXP公司推出的低功耗高性能嵌入式处理器。imx6ull是一颗Cortex-A7架构的MPU。
+
+![在这里插入图片描述](E:\Hardware\Imx6ull\Workspace\imx6ull_learn\imx6ull_learn_notes_img\watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3podWd1YW5saW4xMjE=,size_16,color_FFFFFF,t_70-17184214146822.png)
+
+## 0.3 核心板
+
+![在这里插入图片描述](E:\Hardware\Imx6ull\Workspace\imx6ull_learn\imx6ull_learn_notes_img\aaad291b03204d0796232528ff5e9534.png)
+
+## 0.4 BSP板
+
+![在这里插入图片描述](E:\Hardware\Imx6ull\Workspace\imx6ull_learn\imx6ull_learn_notes_img\ed2d833be3924224a31dfecfd8688a12.png)
+
 # 第1章 开发环境搭建
 
 ## 1.1 工具介绍
@@ -53,6 +73,8 @@ uname -m
 现在需要再X86平台上使用ARM编译工具，编译出来的可执行文件在ARM上使用。
 
 [ARM编译工具下载地址][1]
+
+![在这里插入图片描述](E:\Hardware\Imx6ull\Workspace\imx6ull_learn\imx6ull_learn_notes_img\watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3podWd1YW5saW4xMjE=,size_16,color_FFFFFF,t_70-17184217507144.png)
 
 - 将压缩包解压到指定的目录
 
@@ -204,6 +226,56 @@ clean:
 cleanall:
 	rm  -rf $(BUILD_DIR) $(LIB_DIR) $(DEST_DIR)
 ```
+
+# 第3章 DDR介绍
+
+我们买手机，通常会告诉你这个手机是4+64 或6+128 配置，说的就是RAM 为4GB 或6GB，ROM 为64G 或128GB。
+
+>**RAM**：随机存储器，可以随时进行读写操作，速度很快，掉电以后数据会丢失。**比如内存条、SRAM、SDRAM、DDR 等都是**
+
+```c
+int a;
+a = 10;
+```
+
+a 是一个变量，我们需要很方便的对这个变量进行读写操作，方法就是直接“a”进行读写操作，不需要在乎具体的读写过程。我们可以随意的对RAM 中任何地址的数据（ROM需要地址概念，RAM随机就随机在地址上）进行读写操作，非常方便。
+
+> **ROM**：只读存储器
+
+但是这个ROM 是Flash，比如EMMC 或UFS 存储器，因为历史原因，很多人还是将Flash 叫做ROM。但是EMMC 和UFS，甚至是NAND Flash，这些都是可以进行写操作的！只是写起来比较麻烦，要先进行擦除，然后再发送要写的地址或扇区，最后才是要写入的数据，学习过STM32，使用过WM25QXX 系列的SPI Flash 的同学应该深有体会。
+
+
+- 一般Cortex-A 芯片自带的RAM 很小;
+
+- imx6ull 片内有一个256MB的RAM，如果要运行Linux 的话完全不够用的，所以必须要外接一片RAM 芯片；
+
+- imx6ull 片外有一个512MB 的DDR3 内存芯片；
+- I.MX6U 支持LPDDR2、LPDDR3/DDR3，I.MX6U-ALPHA开发板上选择的是DDR3。
+  
+
+# 第3章 LED驱动开发
+
+## 3.1 编写汇编文件
+
+- 使能时钟
+- 配置电气属性
+- 输出控制LED灯的电平
+
+## 3.2 编译和链接文件
+
+- 编译文件，将汇编文件编译成目标文件
+
+```shell
+
+```
+
+- 链接文件，将目标文件链接为可执行文件(*.elf)
+
+
+
+- 制作镜像文件，在可执行文件的头部添加以下信息，方便板卡的MCU识别。
+
+
 
 
 
