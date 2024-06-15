@@ -2,21 +2,21 @@
 
 ## 0.1 芯片标识
 
-![img](E:\Hardware\Imx6ull\Workspace\imx6ull_learn\imx6ull_learn_notes_img\watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3podWd1YW5saW4xMjE=,size_16,color_FFFFFF,t_70.png)
+![img](..\imx6ull_learn_notes_img\watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3podWd1YW5saW4xMjE=,size_16,color_FFFFFF,t_70.png)
 
 ## 0.2 参数名称
 
 imx6ull是一款由NXP公司推出的低功耗高性能嵌入式处理器。imx6ull是一颗Cortex-A7架构的MPU。
 
-![在这里插入图片描述](E:\Hardware\Imx6ull\Workspace\imx6ull_learn\imx6ull_learn_notes_img\watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3podWd1YW5saW4xMjE=,size_16,color_FFFFFF,t_70-17184214146822.png)
+![在这里插入图片描述](..\imx6ull_learn_notes_img\watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3podWd1YW5saW4xMjE=,size_16,color_FFFFFF,t_70-17184214146822.png)
 
 ## 0.3 核心板
 
-![在这里插入图片描述](E:\Hardware\Imx6ull\Workspace\imx6ull_learn\imx6ull_learn_notes_img\aaad291b03204d0796232528ff5e9534.png)
+![在这里插入图片描述](..\imx6ull_learn_notes_img\aaad291b03204d0796232528ff5e9534.png)
 
 ## 0.4 BSP板
 
-![在这里插入图片描述](E:\Hardware\Imx6ull\Workspace\imx6ull_learn\imx6ull_learn_notes_img\ed2d833be3924224a31dfecfd8688a12.png)
+![在这里插入图片描述](..\imx6ull_learn_notes_img\ed2d833be3924224a31dfecfd8688a12.png)
 
 # 第1章 开发环境搭建
 
@@ -74,7 +74,7 @@ uname -m
 
 [ARM编译工具下载地址][1]
 
-![在这里插入图片描述](E:\Hardware\Imx6ull\Workspace\imx6ull_learn\imx6ull_learn_notes_img\watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3podWd1YW5saW4xMjE=,size_16,color_FFFFFF,t_70-17184217507144.png)
+![在这里插入图片描述](..\imx6ull_learn_notes_img\watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3podWd1YW5saW4xMjE=,size_16,color_FFFFFF,t_70-17184217507144.png)
 
 - 将压缩包解压到指定的目录
 
