@@ -2,7 +2,7 @@
 
 ## 0.1 芯片标识
 
-![img](..\imx6ull_learn_notes_img\watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3podWd1YW5saW4xMjE=,size_16,color_FFFFFF,t_70.png)
+![img](https://raw.githubusercontent.com/lm1611944656/imx6ull_learn/master/imx6ull_learn_notes_img/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3podWd1YW5saW4xMjE=,size_16,color_FFFFFF,t_70.png)
 
 ## 0.2 参数名称
 
