@@ -1,5 +1,7 @@
 # 第0章 芯片介绍
 
+[参考笔记][0]
+
 ## 0.1 芯片标识
 
 ![img](https://raw.githubusercontent.com/lm1611944656/imx6ull_learn/master/imx6ull_learn_notes_img/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3podWd1YW5saW4xMjE=,size_16,color_FFFFFF,t_70.png)
@@ -8,15 +10,15 @@
 
 imx6ull是一款由NXP公司推出的低功耗高性能嵌入式处理器。imx6ull是一颗Cortex-A7架构的MPU。
 
-![在这里插入图片描述](..\imx6ull_learn_notes_img\watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3podWd1YW5saW4xMjE=,size_16,color_FFFFFF,t_70-17184214146822.png)
+![在这里插入图片描述](https://raw.githubusercontent.com/lm1611944656/imx6ull_learn/master/imx6ull_learn_notes_img/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3podWd1YW5saW4xMjE=,size_16,color_FFFFFF,t_70-17184214146822.png)
 
 ## 0.3 核心板
 
-![在这里插入图片描述](..\imx6ull_learn_notes_img\aaad291b03204d0796232528ff5e9534.png)
+![在这里插入图片描述](https://raw.githubusercontent.com/lm1611944656/imx6ull_learn/master/imx6ull_learn_notes_img/aaad291b03204d0796232528ff5e9534.png)
 
 ## 0.4 BSP板
 
-![在这里插入图片描述](..\imx6ull_learn_notes_img\ed2d833be3924224a31dfecfd8688a12.png)
+![在这里插入图片描述](https://raw.githubusercontent.com/lm1611944656/imx6ull_learn/master/imx6ull_learn_notes_img/ed2d833be3924224a31dfecfd8688a12.png)
 
 # 第1章 开发环境搭建
 
@@ -74,7 +76,7 @@ uname -m
 
 [ARM编译工具下载地址][1]
 
-![在这里插入图片描述](..\imx6ull_learn_notes_img\watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3podWd1YW5saW4xMjE=,size_16,color_FFFFFF,t_70-17184217507144.png)
+![在这里插入图片描述](https://raw.githubusercontent.com/lm1611944656/imx6ull_learn/master/imx6ull_learn_notes_img/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3podWd1YW5saW4xMjE=,size_16,color_FFFFFF,t_70-17184217507144.png)
 
 - 将压缩包解压到指定的目录
 
@@ -280,5 +282,7 @@ a 是一个变量，我们需要很方便的对这个变量进行读写操作，
 
 
 # 参考文献
+
+[0]: https://blog.csdn.net/zhuguanlin121/category_11209263.html?spm=1001.2014.3001.5482
 
 [1]:https://releases.linaro.org/components/toolchain/binaries/
