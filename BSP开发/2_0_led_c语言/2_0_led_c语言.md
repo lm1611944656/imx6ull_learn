@@ -37,16 +37,17 @@ imxdownload文件主要干3件事；
 _start:
 
     /*设置处理器进入SVC模式 */
-    mrs r0,cpsr      /*读取cpsr的值到r0 */
-    bic r0,r0,#0x1f  /*清除cpsr的bit4--0 与运算 具体参照相关汇编指令*/
-    orr r0,r0,#0x13  /*使用SVC模式   或运算  这是汇编的与运算*/
-    msr cpsr,r0      /*将r0写入到cpsr中去 */
+    mrs r0, cpsr                /* 读取cpsr的值到r0 */
+    bic r0, r0, #0x1f           /*清除cpsr的bit4--0 与运算 具体参照相关汇编指令*/
+    orr r0, r0, #0x13           /* 使用SVC模式   或运算  这是汇编的与运算*/
+    msr cpsr, r0                /* 将r0写入到cpsr中去 */
 
-    /*设置SP指针 */  /*有的芯片比如三星 还要在设置SP指针之前手动初始化DDR和SDRAM  
+    /*设置SP指针 */
+    /*有的芯片比如三星 还要在设置SP指针之前手动初始化DDR和SDRAM
 				    前面分析DCD 数据的时候就已经讲过了，DCD数据包含了DDR配置
 				    参数，I.MX6U 内部的Boot ROM 会读取DCD 数据中的DDR 配置参数然后完成DDR 初始化的*/
-    ldr sp,=0x80200000  
-    b main /*跳转到C语言main函数*/
+    ldr sp, =0x80200000
+    b main                      /* 跳转到C语言main函数 */
 ```
 
 
@@ -56,8 +57,8 @@ _start:
 - 寄存器映射
 
 ```c
-#ifndef  __MAIN_H
-#define  __MAIN_H
+#ifndef __MAIN_H__
+#define __MAIN_H__
 
 /*外设时钟寄存器*/
 #define  CCM_CCGR0   *((volatile unsigned int *)0X020C4068)
@@ -69,16 +70,14 @@ _start:
 #define  CCM_CCGR6   *((volatile unsigned int *)0X020C4080)
 
 /*
-*  IOMUX 复用相关寄存器 
+*  IOMUX 复用相关寄存器
 */
-
 #define SW_MUX_GPIO1_IO03 *((volatile unsigned int *)0X020E0068)
 #define SW_PAD_GPIO1_IO03 *((volatile unsigned int *)0X020E02F4)
 
 /*
 * GPIO1相关寄存器           这里实际就用了前面两行定义的寄存器
 */
-
 #define GPIO1_DR 			*((volatile unsigned int *)0X0209C000)
 #define GPIO1_GDIR 			*((volatile unsigned int *)0X0209C004)
 #define GPIO1_PSR 			*((volatile unsigned int *)0X0209C008)
@@ -87,7 +86,8 @@ _start:
 #define GPIO1_IMR 			*((volatile unsigned int *)0X0209C014)
 #define GPIO1_ISR 			*((volatile unsigned int *)0X0209C018)
 #define GPIO1_EDGE_SEL 		*((volatile unsigned int *)0X0209C01C)
-#endif
+
+#endif // __MAIN_H__
 ```
 
 
@@ -100,7 +100,7 @@ _start:
 /*使能所有外设时钟*/
 void clk_enable(void)
 {
-    CCM_CCGR0 = 0xFFFFFFFF;
+    // CCM_CCGR0 = 0xFFFFFFFF;
     CCM_CCGR1 = 0xFFFFFFFF;
     CCM_CCGR2 = 0xFFFFFFFF;
     CCM_CCGR3 = 0xFFFFFFFF;
@@ -137,7 +137,7 @@ void delay(volatile unsigned int n)
     {
         delay_short(0x7ff);
     }
-    
+
 }
 /*打开LED灯*/
 void  led_on(void)
@@ -151,23 +151,21 @@ void led_off(void )
     GPIO1_DR |= (1<<3);  //bit3置1
 }
 
-int main() 
+int main(int argc, char **argv)
 {
     clk_enable();  //使能外设时钟
 
     led_init(); //初始化LED
-  //  led_off();  
-    
+    //  led_off();
+
     while(1)
     {
-        led_off();  
-        delay(500);
+        led_off();
+        delay(1000);
 
         led_on();
-        delay(500);
+        delay(1000);
     }
-
-    return 0;
 }
 ```
 
@@ -178,22 +176,28 @@ int main()
 ```makefile
 objs := start.o main.o
 
-ledc.bin:$(objs)
-	arm-linux-gnueabihf-ld -Ttext 0X87800000 -o ledc.elf $^
-	arm-linux-gnueabihf-objcopy -O binary -S ledc.elf $@
-	arm-linux-gnueabihf-objdump -D -m arm ledc.elf > ledc.dis
+led.bin:$(objs)
+	arm-linux-gnueabihf-ld -Ttext 0X87800000 $^ -o led.elf
+#	arm-linux-gnueabihf-ld -Timx6u.ld $^ -o led.elf
+	arm-linux-gnueabihf-objcopy -O binary -S led.elf $@
+	arm-linux-gnueabihf-objdump -D -m arm led.elf > led.dis
 
 %.o:%.s
-	arm-linux-gnueabihf-gcc -Wall -nostdlib -c -o $@ $<
-
-%.o:%.S
-	arm-linux-gnueabihf-gcc -Wall -nostdlib -c -o $@ $<
+	arm-linux-gnueabihf-gcc -Wall -nostdlib -c -O2 -o $@ $<
 
 %.o:%.c
-	arm-linux-gnueabihf-gcc -Wall -nostdlib -c -o $@ $<
+	arm-linux-gnueabihf-gcc -Wall -nostdlib -c -O2 -o $@ $<
+
+# 生将正点原子提供的源码文件利用gcc编译成可以将二进制文件下载到SD卡的软件
+run:
+	gcc imxdownload.c -o  imxdownload
+
+# 利用下载软件将二进制文件下载到SD卡
+download:
+	./imxdownload led.bin /dev/sdb
 
 clean:
-	rm -rf *.o ledc.bin ledc.elf ledc.dis
+	rm -rf *.o led.bin led.elf ledc.dis led.dis ledc.elf load.imx
 ```
 
 
