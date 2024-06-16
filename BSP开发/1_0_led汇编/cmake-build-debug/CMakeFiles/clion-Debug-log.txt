@@ -1,13 +1,2 @@
-/usr/local/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/usr/bin/make -DCMAKE_C_COMPILER=/usr/bin/gcc -DCMAKE_CXX_COMPILER=/usr/bin/g++ -G "CodeBlocks - Unix Makefiles" -S /home/liumeng/imx6ull/BSP开发/1_0_led汇编 -B /home/liumeng/imx6ull/BSP开发/1_0_led汇编/cmake-build-debug
-CMake Deprecation Warning:
-  Support for "Extra Generators" like
-
-    CodeBlocks
-
-  is deprecated and will be removed from a future version of CMake.  IDEs may
-  use the cmake-file-api(7) to view CMake-generated project build trees.
-
-
--- Configuring done (0.0s)
--- Generating done (0.0s)
--- Build files have been written to: /home/liumeng/imx6ull/BSP寮�鍙�/1_0_led姹囩紪/cmake-build-debug
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/usr/local/arm/gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-gcc -DCMAKE_CXX_COMPILER=/usr/local/arm/gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++ -G "CodeBlocks - Unix Makefiles" /tmp/tmp.YoejwlicOg
+env: "/usr/bin/cmake": 娌℃湁閭ｄ釜鏂囦欢鎴栫洰褰�
