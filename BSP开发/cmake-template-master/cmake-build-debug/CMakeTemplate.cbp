@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="CMakeTemplate"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\src\c\;CMake Files\src\c\math\;CMake Files\src\c\nn\;CMake Files\third_party\;CMake Files\third_party\googletest-release-1.10.0\;CMake Files\third_party\googletest-release-1.10.0\googlemock\;CMake Files\third_party\googletest-release-1.10.0\googlemock\cmake\;CMake Files\third_party\googletest-release-1.10.0\googletest\;CMake Files\third_party\googletest-release-1.10.0\googletest\cmake\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="_merge">
+				<Option working_dir="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 _merge"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="demo">
+				<Option output="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/demo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DREAL_COOL_ENGINEER"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/src/c"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googletest/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 demo"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="demo/fast">
+				<Option output="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/demo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DREAL_COOL_ENGINEER"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/src/c"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googletest/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 demo/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_add">
+				<Option output="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/test_add" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DREAL_COOL_ENGINEER"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/src/c"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googletest/include"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googletest"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_add"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_add/fast">
+				<Option output="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/test_add" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DREAL_COOL_ENGINEER"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/src/c"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googletest/include"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googletest"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_add/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_minus">
+				<Option output="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/test_minus" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DREAL_COOL_ENGINEER"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/src/c"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googletest/include"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googletest"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_minus"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_minus/fast">
+				<Option output="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/test_minus" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DREAL_COOL_ENGINEER"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/src/c"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googletest/include"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googletest"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_minus/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_gtest_demo">
+				<Option output="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/test_gtest_demo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DREAL_COOL_ENGINEER"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/src/c"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googletest/include"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googletest"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_gtest_demo"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_gtest_demo/fast">
+				<Option output="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/test_gtest_demo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DREAL_COOL_ENGINEER"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/src/c"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googletest/include"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googletest"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_gtest_demo/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="package">
+				<Option working_dir="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 package"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="package_source">
+				<Option working_dir="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 package_source"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test">
+				<Option working_dir="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="math">
+				<Option output="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/src/c/math/libmath.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/src/c/math"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DREAL_COOL_ENGINEER"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/src/c"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/src/c/math/Makefile&quot;  VERBOSE=1 math"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/src/c/math/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/src/c/math/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/src/c/math/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="math/fast">
+				<Option output="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/src/c/math/libmath.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/src/c/math"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DREAL_COOL_ENGINEER"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/src/c"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/src/c/math/Makefile&quot;  VERBOSE=1 math/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/src/c/math/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/src/c/math/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/src/c/math/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="nn">
+				<Option output="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/src/c/nn/libnn.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/src/c/nn"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DREAL_COOL_ENGINEER"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/src/c"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/src/c/nn/Makefile&quot;  VERBOSE=1 nn"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/src/c/nn/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/src/c/nn/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/src/c/nn/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="nn/fast">
+				<Option output="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/src/c/nn/libnn.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/src/c/nn"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DREAL_COOL_ENGINEER"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/src/c"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/src/c/nn/Makefile&quot;  VERBOSE=1 nn/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/src/c/nn/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/src/c/nn/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/src/c/nn/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock">
+				<Option output="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/lib/libgmockd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/third_party/googletest-release-1.10.0/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DREAL_COOL_ENGINEER"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/src/c"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googlemock/include"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googlemock"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googletest/include"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googletest"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/third_party/googletest-release-1.10.0/googlemock/Makefile&quot;  VERBOSE=1 gmock"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/third_party/googletest-release-1.10.0/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/third_party/googletest-release-1.10.0/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/third_party/googletest-release-1.10.0/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock/fast">
+				<Option output="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/lib/libgmockd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/third_party/googletest-release-1.10.0/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DREAL_COOL_ENGINEER"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/src/c"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googlemock/include"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googlemock"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googletest/include"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googletest"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/third_party/googletest-release-1.10.0/googlemock/Makefile&quot;  VERBOSE=1 gmock/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/third_party/googletest-release-1.10.0/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/third_party/googletest-release-1.10.0/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/third_party/googletest-release-1.10.0/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock_main">
+				<Option output="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/lib/libgmock_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/third_party/googletest-release-1.10.0/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DREAL_COOL_ENGINEER"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/src/c"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googlemock/include"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googlemock"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googletest/include"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googletest"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/third_party/googletest-release-1.10.0/googlemock/Makefile&quot;  VERBOSE=1 gmock_main"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/third_party/googletest-release-1.10.0/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/third_party/googletest-release-1.10.0/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/third_party/googletest-release-1.10.0/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock_main/fast">
+				<Option output="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/lib/libgmock_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/third_party/googletest-release-1.10.0/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DREAL_COOL_ENGINEER"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/src/c"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googlemock/include"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googlemock"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googletest/include"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googletest"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/third_party/googletest-release-1.10.0/googlemock/Makefile&quot;  VERBOSE=1 gmock_main/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/third_party/googletest-release-1.10.0/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/third_party/googletest-release-1.10.0/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/third_party/googletest-release-1.10.0/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest">
+				<Option output="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/lib/libgtestd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/third_party/googletest-release-1.10.0/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DREAL_COOL_ENGINEER"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/src/c"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googletest/include"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googletest"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/third_party/googletest-release-1.10.0/googletest/Makefile&quot;  VERBOSE=1 gtest"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/third_party/googletest-release-1.10.0/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/third_party/googletest-release-1.10.0/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/third_party/googletest-release-1.10.0/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest/fast">
+				<Option output="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/lib/libgtestd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/third_party/googletest-release-1.10.0/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DREAL_COOL_ENGINEER"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/src/c"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googletest/include"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googletest"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/third_party/googletest-release-1.10.0/googletest/Makefile&quot;  VERBOSE=1 gtest/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/third_party/googletest-release-1.10.0/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/third_party/googletest-release-1.10.0/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/third_party/googletest-release-1.10.0/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main">
+				<Option output="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/lib/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/third_party/googletest-release-1.10.0/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DREAL_COOL_ENGINEER"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/src/c"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googletest/include"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googletest"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/third_party/googletest-release-1.10.0/googletest/Makefile&quot;  VERBOSE=1 gtest_main"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/third_party/googletest-release-1.10.0/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/third_party/googletest-release-1.10.0/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/third_party/googletest-release-1.10.0/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main/fast">
+				<Option output="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/lib/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/third_party/googletest-release-1.10.0/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DREAL_COOL_ENGINEER"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/src/c"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googletest/include"/>
+					<Add directory="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googletest"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/third_party/googletest-release-1.10.0/googletest/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/third_party/googletest-release-1.10.0/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/third_party/googletest-release-1.10.0/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.yXc5ZQ2un3/cmake-build-debug/third_party/googletest-release-1.10.0/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/tmp/tmp.yXc5ZQ2un3/src/c/main.c">
+			<Option target="demo"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.yXc5ZQ2un3/src/c/math/add.c">
+			<Option target="math"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.yXc5ZQ2un3/src/c/math/add.h">
+			<Option target="math"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.yXc5ZQ2un3/src/c/math/minus.c">
+			<Option target="math"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.yXc5ZQ2un3/src/c/math/minus.h">
+			<Option target="math"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.yXc5ZQ2un3/src/c/nn/nn.c">
+			<Option target="nn"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.yXc5ZQ2un3/src/c/nn/nn.h">
+			<Option target="nn"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.yXc5ZQ2un3/test/c/test_add.cc">
+			<Option target="test_add"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.yXc5ZQ2un3/test/c/test_gtest_demo.cc">
+			<Option target="test_gtest_demo"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.yXc5ZQ2un3/test/c/test_minus.cc">
+			<Option target="test_minus"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googlemock/src/gmock-all.cc">
+			<Option target="gmock"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googlemock/src/gmock_main.cc">
+			<Option target="gmock_main"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googletest/src/gtest-all.cc">
+			<Option target="gtest"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googletest/src/gtest_main.cc">
+			<Option target="gtest_main"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.yXc5ZQ2un3/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.yXc5ZQ2un3/src/c/cmake_template_version.h.in">
+			<Option virtualFolder="CMake Files\src\c\"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.yXc5ZQ2un3/src/c/math/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\c\math\"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.yXc5ZQ2un3/src/c/nn/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\c\nn\"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\third_party\googletest-release-1.10.0\"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googlemock/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\third_party\googletest-release-1.10.0\googlemock\"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googlemock/cmake/gmock.pc.in">
+			<Option virtualFolder="CMake Files\third_party\googletest-release-1.10.0\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googlemock/cmake/gmock_main.pc.in">
+			<Option virtualFolder="CMake Files\third_party\googletest-release-1.10.0\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\third_party\googletest-release-1.10.0\googletest\"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googletest/cmake/Config.cmake.in">
+			<Option virtualFolder="CMake Files\third_party\googletest-release-1.10.0\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googletest/cmake/gtest.pc.in">
+			<Option virtualFolder="CMake Files\third_party\googletest-release-1.10.0\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googletest/cmake/gtest_main.pc.in">
+			<Option virtualFolder="CMake Files\third_party\googletest-release-1.10.0\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.yXc5ZQ2un3/third_party/googletest-release-1.10.0/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\third_party\googletest-release-1.10.0\googletest\cmake\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

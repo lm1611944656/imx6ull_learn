@@ -1,0 +1,11 @@
+# ninja log v5
+1	320	7270758999355802	build.ninja	8a581ac828588da2
+9	61	7270759000411409	src/c/math/CMakeFiles/math.dir/add.c.obj	eb7185fdc570f983
+1	62	7270759000439118	src/c/math/CMakeFiles/math.dir/minus.c.obj	8b6351041e7ba283
+17	75	7270759000568494	src/c/nn/CMakeFiles/nn.dir/nn.c.obj	e30f490896bf7859
+28	86	7270759000673900	CMakeFiles/demo.dir/src/c/main.c.obj	2f1062d682d7cdb1
+62	917	7270759008991606	src/c/math/libmath.a	84f6a07101a3c726
+76	917	7270759008991606	src/c/nn/libnn.a	b82532090fedbd89
+917	937	7270759009196611	libmerge.a	a0a316abf737e0be
+917	937	7270759009196611	E:/SoftwareProject/cmake-template-master/cmake-build-debug/libmerge.a	a0a316abf737e0be
+938	1033	7270759010116776	demo.exe	b96d5e4a8a5cc4d8

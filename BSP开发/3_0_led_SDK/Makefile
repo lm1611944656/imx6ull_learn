@@ -24,7 +24,7 @@ clean:
 
 # 生将正点原子提供的源码文件利用gcc编译成可以将二进制文件下载到SD卡的软件
 run:
-	gcc imxdownload.c -o  imxdownload
+	gcc imxdownload.c  -o  imxdownload
 
 # 利用下载软件将二进制文件下载到SD卡
 download:

@@ -1,0 +1,1 @@
+message("Hello! Here is hello.cmake\n")
