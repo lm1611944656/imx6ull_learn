@@ -1,5 +1,5 @@
 CROSS_COMPILE  ?= arm-linux-gnueabihf-
-TARGET 		   ?= ledc
+TARGET 		   ?= beep
 
 CC			:= $(CROSS_COMPILE)gcc
 LD			:= $(CROSS_COMPILE)ld
@@ -10,14 +10,16 @@ OBJDUMP		:= $(CROSS_COMPILE)objdump
 INCUDIRS	:=  imx6ull \
 				driver/clk \
 				driver/delay \
-				driver/led
+				driver/led \
+				driver/beep
 
 # 指定源码路径
 SRCDIRS		:=  startup \
 				project \
 				driver/clk \
 				driver/delay \
-				driver/led
+				driver/led \
+				driver/beep
 
 # 指定链接脚本路径
 SCRIPTPATH		:= script
@@ -84,6 +86,7 @@ clean:
 
 # 生将正点原子提供的源码文件利用gcc编译成可以将二进制文件下载到SD卡的软件
 run:
+	@mkdir ./obj
 	gcc ./download_app/imxdownload.c  -o  imxdownload
 
 # 利用下载软件将二进制文件下载到SD卡
